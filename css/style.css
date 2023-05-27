@@ -95,3 +95,35 @@ body{
   header.top-bar .container .auth .divider{
     padding: 0 1rem;
   }
+  nav .top{
+    padding: 1.5rem 0;
+  }
+  nav .top .contact h5, nav .top .time h5{
+    font-family: 'Relway-Black';
+    margin-bottom: 0.25rem;
+  }
+  nav .top .contact h6, nav .top .time h6 {
+    font-family: 'Relway-Medium';
+    letter-spacing: 0.055rem;
+    font-size: 0.75rem;
+    color: var(--ternary);
+  }
+  nav .top .contact img, nav .top .time img{
+    margin-right: 1rem;
+  }
+  nav .navbar a{
+    text-decoration: none;
+    color: var(--secondary);
+    font-family: 'Relway-SemiBold';
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    transition: all .3s ease;
+  }
+  nav .navbar a.active {
+    background: var(--primary);
+    color: var(--pure);
+  }
+  nav .navbar a:hover{
+    background: var(--primary);
+    color: var(--pure);
+  }

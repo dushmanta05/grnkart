@@ -8,3 +8,22 @@
 .items-center{
     align-items: center;
 }
+.justify-center{
+    justify-content: center;
+}
+.magic-shadow{
+    position: relative;
+    background: var(--heaven);
+}
+.magic-shadow:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 69px;
+    background-image: url(../icons/shadow.svg);
+    bottom: -22px;
+    position: absolute;
+    background-repeat: no-repeat;
+    z-index: -1;
+    background-position: center;
+}
