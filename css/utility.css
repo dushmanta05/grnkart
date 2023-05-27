@@ -27,3 +27,34 @@
     z-index: -1;
     background-position: center;
 }
+.btn{
+    padding: 0.75rem 0.75rem;
+    border-radius: 4px;
+    line-height: 0.8;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all .3s ease;
+    border: 1px solid transparent
+}
+
+.btn-primary{
+    background: var(--primary);
+    color: var(--heaven);
+}
+.btn-primary:hover{
+    background: var(--heaven);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+.btn-secondary{
+    background: var(--secondary);
+    color: var(--heaven);
+}
+.btn-secondary:hover{
+    background: var(--heaven);
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
+}
+header.hero .btn:first-child{
+    margin-right: 0.5rem;
+}
