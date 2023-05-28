@@ -47,6 +47,7 @@
 }
 body{
     -webkit-font-smoothing:antialiased;
+    height: 4000px;
 }
 
 .container{
@@ -170,4 +171,106 @@ body{
     position: absolute;
     top: -40px;
     right: 40px;
+  }
+
+  section{
+    padding: 4rem 0;
+  }
+  section.top-products{
+    background: var(--light);
+  }
+  section.top-products .slider .food-card{
+    background: var(--pure);
+    padding: 1.5rem 0;
+    border-radius: 4px;
+  }
+
+  section.top-products .slider .food-card .product-img img{
+    width: 80%;
+    height: 200px;
+    padding-bottom: 1rem;
+    object-fit: contain;
+  }
+  hr {
+    border: 1px solid var(--light);
+    opacity: 0.8;
+    margin: 1rem 0;
+  }
+  section.top-products .slider .food-card h2{
+    font-family: 'Relway-Bold';
+    font-size: 1.3rem;
+    margin-bottom: 0.25rem;
+  }
+  section.top-products .slider .food-card .stars{
+    margin-bottom: 0.5rem;
+  }
+  section.top-products .slider .food-card .stars img {
+    margin-right: 0.25rem;
+  }
+  section.top-products .slider .food-card .price {
+    font-family: 'Relway-Medium';
+    color: var(--danger);
+    margin-bottom: 1rem;
+  }
+  section.top-products .slider .food-card button{
+    font-family: 'Relway-Medium';
+    color: var(--secondary);
+    background: var(--heaven);
+    border: 2px solid var(--primary);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all .3s ease;
+  }
+  section.top-products .slider .food-card button img{
+    background: var(--primary);
+    padding: 0.5rem;
+    height: 33px;
+    margin-right: 1.2rem;
+  }
+  section.top-products .slider .food-card button:hover{
+    background: var(--primary);
+    color: var(--heaven);
+  }
+  .slick-slide{
+    margin: 0 27px;
+  }
+  .slick-list{
+    margin: 0 -27px;
+  }
+
+  .top-products .slider-btn{
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: var(--primary);
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+  } 
+
+  .top-products .prev-btn{
+    position: absolute;
+    top: 46%;
+    left: -3rem;
+    z-index: 1;
+  }
+  section.top-products .slider{
+    position: relative;
+  }
+  .top-products .next-btn{
+    position: absolute;
+    top: 46%;
+    right: -3rem;
+    z-index: 1;
+  }
+
+  .top-products .btn-wrapper{
+    margin-top: 2rem;
+  }
+  .slick-track{
+    padding: 1rem 0;
   }

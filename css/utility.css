@@ -15,6 +15,25 @@
     position: relative;
     background: var(--heaven);
 }
+
+.magic-shadow-sm:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 69px;
+    background-image: url(../icons/shadow-sm.svg);
+    bottom: -20px;
+    position: absolute;
+    background-repeat: no-repeat;
+    z-index: -1;
+    background-position: center;
+}
+
+.magic-shadow-sm{
+    position: relative;
+    background: var(--heaven);
+}
+
 .magic-shadow:after{
     content: '';
     display: block;
@@ -57,4 +76,25 @@
 }
 header.hero .btn:first-child{
     margin-right: 0.5rem;
+}
+
+.section-heading{
+    font-family: 'Relway-Bold';
+    text-align: center;
+    position: relative;
+    margin-bottom: 4rem;
+}
+.section-heading::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 30px;
+    background-image: url(../icons/hr.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: -40px;
+}
+.text-center{
+    text-align: center;
 }
