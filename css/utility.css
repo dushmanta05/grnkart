@@ -27,6 +27,8 @@
     background-repeat: no-repeat;
     z-index: -1;
     background-position: center;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .magic-shadow-sm{
@@ -101,4 +103,7 @@ header.hero .btn:first-child{
 
 .flex-1{
     flex: 1;
+}
+.text-primary{
+    color: var(--primary);
 }

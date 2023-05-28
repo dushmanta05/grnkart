@@ -291,3 +291,37 @@ body{
     line-height: 1.7;
     margin-bottom: 4rem;
   }
+
+  section.services{
+    background: var(--light);
+    position: relative;
+    z-index: 0;
+  }
+  section.services .card-wrapper .service-card{
+    background: var(--heaven);
+    text-align: center;
+    padding: 2rem;
+    padding-top: 4rem;
+    position: relative;
+    border-radius: 4px;
+    margin-right: 2rem;
+  }
+  section.services .card-wrapper{
+    margin-right: -2rem;
+    margin-top: 8rem;
+  }
+  section.services .card-wrapper .service-card img{
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  section.services .card-wrapper .service-card h2{
+    font-family: 'Raleway-Bold';
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  section.services .card-wrapper .service-card p{
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
