@@ -107,3 +107,6 @@ header.hero .btn:first-child{
 .text-primary{
     color: var(--primary);
 }
+.text-pure{
+    color: var(--pure);
+}

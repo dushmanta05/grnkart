@@ -325,3 +325,43 @@ body{
     line-height: 1.6;
     margin-bottom: 1rem;
   }
+
+  section.deals {
+    background: linear-gradient(
+        rgba(35, 43, 56, 0.9),
+        rgba(35, 43, 56, 0.9)
+        ), url(../images/food-table.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+  }
+
+  section.deals .timer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: -2rem;
+    margin-bottom: 2rem;
+  }
+  section.deals .timer div {
+    margin-right: 2rem;
+    background: var(--primary);
+    width: 150px;
+    height: 150px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  section.deals .timer div span:first-child{
+    font-family: 'Raleway-SemiBold';
+    font-size: 2.5rem;
+    color: var(--heaven);
+    margin-bottom: 0.05rem;
+  }
+  section.deals .timer div span:last-child{
+    font-family: 'Raleway-Medium';
+    color: var(--heaven);
+  }
