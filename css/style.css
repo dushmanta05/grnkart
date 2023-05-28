@@ -47,7 +47,6 @@
 }
 body{
     -webkit-font-smoothing:antialiased;
-    height: 4000px;
     font-family: 'Raleway-Regular';
 }
 
@@ -477,4 +476,69 @@ body{
   }
   section.contact-us .map{
     filter: grayscale(100%);
+  }
+  footer{
+    background: var(--footer);
+    padding: 4rem 0;
+  }
+
+  footer .container{
+    display: flex;
+    color: var(--pure);
+  }
+  footer .box{
+    flex: 1;
+    margin-right: 2rem;
+    text-align: center;
+  }
+  footer .box ul{
+    list-style-type: none;
+  }
+  footer .box ul li a{
+    color: var(--pure);
+    text-decoration: none;
+    transition: all .3s ease;
+  }
+  footer .box ul li a:hover{
+    color: var(--primary);
+  }
+  footer .box h3{
+    border-bottom: 1px solid var(--primary);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+  footer .box p{
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  footer .box ul li{
+    margin-bottom: 1rem;
+  }
+  footer .box:last-child > div {
+    display: flex;
+    justify-content: center;
+  }
+  footer .box:last-child{
+    text-align: left;
+  }
+  footer .box:last-child ul li{
+    margin-bottom: 1.5rem;
+  }
+  footer .box:last-child h3{
+    text-align: center;
+  }
+  footer .box:last-child > div img{
+    margin-right: 1rem;
+  }
+
+  footer.develop{
+    padding: 1rem 0;
+    background: var(--secondary);
+    color: var(--pure);
+    text-align: center;
+    font-size: 0.75rem;
+  }
+  footer.develop a{
+    color: var(--primary);
+    text-decoration: none;
   }
