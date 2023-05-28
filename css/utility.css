@@ -110,3 +110,7 @@ header.hero .btn:first-child{
 .text-pure{
     color: var(--pure);
 }
+
+.line-height{
+    line-height: 1.6;
+}

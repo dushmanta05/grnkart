@@ -365,3 +365,38 @@ body{
     font-family: 'Raleway-Medium';
     color: var(--heaven);
   }
+  section.articles{
+    background: var(--light);
+    position: relative;
+    z-index: 0;
+  }
+  section.articles .articles-wrap .card img{
+    width: 100%;
+  }
+  section.articles .articles-wrap{
+    display: flex;
+    margin-right: -2rem;
+    margin-bottom: 2rem;
+  }
+  section.articles .articles-wrap .card{
+    margin-right: 2rem;
+    background: var(--heaven);
+    border-radius: 4px;
+  }
+  section.articles .articles-wrap .card .content{
+    padding: 2rem;
+  }
+  section.articles .articles-wrap .card .content .meta{
+    margin-bottom: 1rem;
+  }
+  section.articles .articles-wrap .card .content .meta .comment-count{
+    margin-left: 1rem;
+  }
+  section.articles .articles-wrap .card .content h2{
+    font-family: 'Raleway-Bold';
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  section.articles .articles-wrap .card .content p{
+    line-height: 1.6;
+  }
