@@ -447,3 +447,34 @@ body{
   section.newsletter .input-wrap button:hover{
     background: var(--secondary);
   }
+  section.contact-us{
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  section.contact-us .contact-info-wrap{
+    padding: 4rem 0;
+  }
+  section.contact-us .contact-info-wrap .contact-info{
+    display: flex;
+    justify-content: center;
+  }
+  section.contact-us .contact-info-wrap .contact-info > div > div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  section.contact-us .contact-info-wrap .contact-info > div > div img {
+    margin-right: 1rem;
+  }
+
+  section.contact-us .contact-info-wrap .contact-info > div > div > div{
+    display: flex;
+    flex-direction: column;
+  }
+  section.contact-us .contact-info-wrap .contact-info > div > div > div span:first-child{
+    font-family: 'Raleway-Bold';
+    margin-bottom: 0.25rem;
+  }
+  section.contact-us .map{
+    filter: grayscale(100%);
+  }
