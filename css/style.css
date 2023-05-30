@@ -68,7 +68,7 @@ body{
     }
   }
   
-  @media (min-width: 992px) {
+  @media (min-width: 993px) {
     .container {
       max-width: 960px;
     }
@@ -80,6 +80,108 @@ body{
     }
   }
 
+  .main-wrapper{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .nav-bg{
+    width:100%;
+    height:100%;
+    background:var(--light);
+    position: absolute;
+    top:0;
+    left:0;
+    padding:0;
+    z-index:1;
+  }
+  .nav-trigger{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 15px;
+    display: none;
+  }
+
+  .nav-trigger svg{
+    transform: rotate(90deg) scaleX(-1);
+    width: 40px;
+    height: 40px;
+  }
+
+  .site-content-wrap{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: var(--heaven);
+    z-index: 2;
+    transition: all .3s ease;
+  }
+  .site-content-wrap.scaled{
+    transform: scale(0.9) translateX(90%);
+    border-radius: 3px;
+    box-shadow: 0 3px 10px 0 var(--secondary);
+  }
+
+  .site-content{
+    width: 100%;
+    height: 100%;
+    overflow-x: auto;
+  }
+
+
+  .nav-bg .mobile-logo{
+    padding: 1rem;
+  }
+  .nav-bg .mobile-nav{
+    padding: 1rem;
+  }
+  .nav-bg .mobile-nav ul{
+    list-style-type: none;
+  }
+  .nav-bg .mobile-nav ul li{
+    margin-bottom: 1rem;
+  }
+  .nav-bg .mobile-nav ul li a{
+    text-decoration: none;
+    color: var(--secondary);
+    font-family: 'Raleway-Medium';
+  }
+  .nav-bg .mobile-nav ul li a:hover{
+    color: var(--primary);
+  }
+
+  .nav-bg .contact, .nav-bg .time{
+    padding: 1rem;
+    padding-left: 0;
+  }
+  .nav-bg .contact img, .nav-bg .time img{
+    margin-right: 1rem;
+  }
+  .nav-bg .contact h5, .nav-bg .time h5{
+    margin-bottom: 0.25rem;
+    font-size: 1rem;
+    font-family: 'Raleway-Bold';
+  }
+  .nav-bg .contact h6, .nav-bg .time h6{
+    font-size: 0.75rem;
+  }
+
+  .nav-bg .cart{
+    margin-bottom: 1.5rem;
+  }
+  .nav-bg .cart a{
+    color: var(--secondary);
+    text-decoration: none;
+    font-family: 'Raleway-Bold';
+  }
+  .nav-bg .cart img{
+    margin-right: 0.75rem;
+    width: 20px;
+    height: 20px;
+  }
   header.top-bar{
     background: var(--secondary);
     color: var(--pure);
@@ -476,6 +578,7 @@ body{
   }
   section.contact-us .map{
     filter: grayscale(100%);
+    padding: 1rem;
   }
   footer{
     background: var(--footer);
@@ -541,4 +644,33 @@ body{
   footer.develop a{
     color: var(--primary);
     text-decoration: none;
+  }
+  @media (max-width:992px){
+    .nav-trigger{
+      display: block;
+    }
+    .top-bar, nav{
+      display: none;
+    }
+    header.hero .hero-img{
+      right: -160px;
+      top: 100px;
+    }
+    header.hero {
+      margin-top: -4rem;
+    }
+    header.hero p{
+      width: 60%;
+    }
+    .top-products .slider-btn{
+      display: none!important;
+    }
+    .articles .articles-wrap{
+      flex-direction: column;
+      margin-bottom: 0rem;
+    }
+    .articles .articles-wrap .card{
+      margin-right: 0;
+      margin-bottom: 3rem;
+    }
   }
