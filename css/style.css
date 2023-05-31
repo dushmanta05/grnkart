@@ -58,7 +58,7 @@ body{
 
 @media (min-width:576px){
     .container{
-        max-width: 540px;
+        max-width: 548px;
     }
 }
 
@@ -578,11 +578,12 @@ body{
   }
   section.contact-us .map{
     filter: grayscale(100%);
-    padding: 1rem;
+    padding: 1rem 0;
   }
   footer{
     background: var(--footer);
-    padding: 4rem 0;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
   }
 
   footer .container{
@@ -645,6 +646,19 @@ body{
     color: var(--primary);
     text-decoration: none;
   }
+  @media (max-width:1200px){
+    section.top-products .slider .food-card button span{
+      padding-left: 1.5rem;
+    }
+    header.hero h1 {
+      font-size: 2.2rem;
+    }
+  }
+  @media (max-width:1040px){
+    .top-products .slider-btn{
+      display: none!important;
+    }
+  }
   @media (max-width:992px){
     .nav-trigger{
       display: block;
@@ -653,8 +667,8 @@ body{
       display: none;
     }
     header.hero .hero-img{
-      right: -160px;
-      top: 100px;
+      right: -120px;
+      top: 75px;
     }
     header.hero {
       margin-top: -4rem;
@@ -662,9 +676,10 @@ body{
     header.hero p{
       width: 60%;
     }
-    .top-products .slider-btn{
-      display: none!important;
-    }
+    section.about-meal img {
+      width: 90%;
+      padding-top: 7rem;
+  }
     .articles .articles-wrap{
       flex-direction: column;
       margin-bottom: 0rem;
@@ -673,4 +688,252 @@ body{
       margin-right: 0;
       margin-bottom: 3rem;
     }
+    section.top-products .slider .food-card button span{
+      padding-left: 0;
+    }
   }
+  @media (max-width:768px){
+    .about-meal .about-meal-wrap{
+      flex-direction: column;
+    }
+    .about-meal .about-meal-wrap img{
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+    section.services .card-wrapper{
+      flex-direction: column;
+      margin-right: 0;
+    }
+    section.services .card-wrapper .service-card{
+      margin-bottom: 6rem;
+      margin-right: 0;
+    }
+    section.services{
+      padding-bottom: 0;
+    }
+    section.top-products .slider .food-card button{
+      width: 50%;
+    }
+    section.about-meal img{
+      padding-top: 1rem;
+    }
+    footer .container{
+      flex-direction: column;
+    }
+    footer .box{
+      text-align: left;
+      margin-right: 0;
+      margin-bottom: 2rem;
+    }
+    footer .box:last-child h3{
+      text-align: left;
+    }
+    footer .box:last-child > div{
+      text-align: left;
+      display: block;
+    }
+    section.newsletter .container > div:first-child img {
+      width: 75%;
+    }
+    header.hero .container{
+      padding-left: 1rem;
+    }
+    header.hero{
+      margin-top: -3rem;
+    }
+    section.deals .timer > div{
+      margin-right: 0.50rem;
+    }
+    section.deals .timer{
+      margin-right: -0.50rem;
+    }
+    section.newsletter .container{
+      flex-direction: column;
+      padding: 0.50rem;
+    }
+    section.newsletter .container > div:first-child img{
+      width: 75%;
+    }
+    footer .container{
+      margin: 0;
+      margin-left: 1rem;
+    }
+    footer .box:last-child{
+      margin-bottom: 0rem;
+    }
+  }
+  @media (max-width:576px){
+    header.hero .hero-img {
+      right: -70px;
+      top: 90px;
+  }
+    section.top-products .slider{
+      margin: 0 2rem;
+    }
+    section.about-meal .container{
+      padding: 0 2rem;
+    }
+    section.services .card-wrapper .service-card{
+      margin: 0 2rem;
+      margin-bottom: 7rem;
+    }
+    section.articles .container{
+      padding: 0 2rem;
+    }
+    section.newsletter .container{
+      padding: 0 2rem;
+    }
+    section.contact-us{
+      flex-direction: column;
+    }
+    section.contact-us .contact-info-wrap{
+      padding-top: 2rem;
+      padding-bottom: 0rem;
+    }
+    section.contact-us .frame{
+      width: 350px;
+      height: 250px;
+    }
+    footer.main .container {
+      width: 95%;
+    }
+    section.articles .articles-wrap {
+      margin-bottom: 1rem;
+    }
+  }
+  @media (max-width:560px){
+    header.hero .hero-img {
+      right: -110px;
+    top: 110px;
+  }
+  }
+  @media (max-width:520px){
+    section.articles .articles-wrap .card .content {
+      padding: 1rem;
+  }
+  }
+  @media (max-width:480px){
+    section.articles .articles-wrap .card .content {
+      font-size: 0.9rem;
+  }
+  section.articles .articles-wrap {
+    margin-bottom: 0rem;
+  }
+  }
+  @media (max-width:490px){
+    header.hero .hero-img {
+      right: -150px;
+    }
+  }
+  @media (max-width:463px){
+    header.hero .hero-img {
+      right: -180px;
+      top: 123px;
+    }
+  }
+  @media (max-width:440px){
+    section.articles .articles-wrap .card .content .meta .comment-count {
+      display: none;
+  }
+}
+@media (max-width:420px){
+  header.hero .content{
+    width: 85%;
+  }
+  header.hero .hero-img {
+    right: -200px;
+    top: 134px;
+  }
+  section.deals .timer div {
+    height: 100px
+  }
+  section.services .card-wrapper div:last-child{
+    margin-bottom: 6rem;
+  }
+}
+@media (max-width:400px){
+  header.hero .hero-btn{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 10rem;
+  }
+  header.hero .btn:first-child {
+    margin-right: 0;
+}
+  header.hero .hero-img {
+    top: 164px;
+  }
+  section.newsletter .container{
+    padding: 0 1.5rem;
+  }
+  section.top-products .slider .food-card button{
+    width: 60%;
+  }
+}
+@media (max-width:370px){
+  section.top-products .slider .food-card button{
+    width: 65%;
+  }
+}
+@media (max-width:320px){
+  section.top-products .slider .food-card button{
+    width: 70%;
+  }
+}
+@media (max-width:370px){
+  header.hero .hero-img {
+    right: -230px;
+    top: 185px;
+}
+header.hero p {
+  width: 70%;
+}
+}
+@media (max-width:340px){
+header.hero p {
+  width: 75%;
+}
+}
+@media (max-width:383px){
+  header.hero {
+    margin-top: -2rem;
+}
+}
+@media (max-width:370px){
+  header.hero {
+    margin-top: -1rem;
+}
+}
+@media (max-width:390px){
+  section.newsletter .input-wrap input{
+    font-size: 0.9rem;
+  }
+  section.newsletter .input-wrap button{
+    font-size: 0.9rem;
+  }
+}
+@media (max-width:360px){
+  section.newsletter .container{
+    padding: 0 1rem;
+  }
+}
+@media (max-width:350px){
+  section.newsletter .input-wrap input{
+    font-size: 0.8rem;
+  }
+  section.newsletter .input-wrap button{
+    font-size: 0.8rem;
+  }
+}
+@media (max-width:325px){
+  section.newsletter .container{
+    padding: 0 0.8rem;
+  }
+}
+@media (max-width:330px){
+  section.articles .articles-wrap .card .content {
+    font-size: 0.85rem;
+}
+}
+
